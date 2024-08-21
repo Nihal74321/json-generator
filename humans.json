@@ -1,0 +1,83 @@
+[
+    {
+      "first_name": "Michael",
+      "last_name": "Johnson",
+      "gender": "m",
+      "email": "michael.johnson@orange.mail",
+      "mobile_number": "078-459-2345",
+      "payment_method": "Online [Credit Card]"
+    },
+    {
+      "first_name": "Emily",
+      "last_name": "Davis",
+      "gender": "f",
+      "email": "emily.davis@skyline.com",
+      "mobile_number": "082-712-3987",
+      "payment_method": "Online [Apple Pay]"
+    },
+    {
+      "first_name": "James",
+      "last_name": "Smith",
+      "gender": "m",
+      "email": "james.smith@dawn.net",
+      "mobile_number": "075-221-5469",
+      "payment_method": "Cash On Delivery"
+    },
+    {
+      "first_name": "Sophia",
+      "last_name": "Brown",
+      "gender": "f",
+      "email": "sophia.brown@oceanic.biz",
+      "mobile_number": "071-356-2930",
+      "payment_method": "Online [Credit Card]"
+    },
+    {
+      "first_name": "Liam",
+      "last_name": "Taylor",
+      "gender": "m",
+      "email": "liam.taylor@radiant.tech",
+      "mobile_number": "086-927-5486",
+      "payment_method": "Online [Apple Pay]"
+    },
+    {
+      "first_name": "Isabella",
+      "last_name": "Martinez",
+      "gender": "f",
+      "email": "isabella.martinez@clearview.io",
+      "mobile_number": "073-819-7634",
+      "payment_method": "Cash On Delivery"
+    },
+    {
+      "first_name": "Noah",
+      "last_name": "Anderson",
+      "gender": "m",
+      "email": "noah.anderson@quantum.org",
+      "mobile_number": "076-294-8032",
+      "payment_method": "Online [Credit Card]"
+    },
+    {
+      "first_name": "Ava",
+      "last_name": "Wilson",
+      "gender": "f",
+      "email": "ava.wilson@arcadia.io",
+      "mobile_number": "080-653-2147",
+      "payment_method": "Online [Apple Pay]"
+    },
+    {
+      "first_name": "Ethan",
+      "last_name": "Moore",
+      "gender": "m",
+      "email": "ethan.moore@sunrise.net",
+      "mobile_number": "074-398-7625",
+      "payment_method": "Cash On Delivery"
+    },
+    {
+      "first_name": "Mia",
+      "last_name": "Thomas",
+      "gender": "f",
+      "email": "mia.thomas@venturecorp.biz",
+      "mobile_number": "079-487-1203",
+      "payment_method": "Online [Credit Card]"
+    }
+]
+  

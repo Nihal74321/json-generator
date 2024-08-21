@@ -1,0 +1,394 @@
+[
+    {
+        "name": "Bella", 
+        "gender": "f"
+    },
+    {
+        "name": "Max", 
+        "gender": "m"
+    },
+    {
+        "name": "Charlie", 
+        "gender": "n"
+    },
+    {
+        "name": "Luna", 
+        "gender": "f"
+    },
+    {
+        "name": "Cooper", 
+        "gender": "m"
+    },
+    {
+        "name": "Lucy", 
+        "gender": "f"
+    },
+    {
+        "name": "Milo", 
+        "gender": "m"
+    },
+    {
+        "name": "Bailey", 
+        "gender": "n"
+    },
+    {
+        "name": "Daisy", 
+        "gender": "f"
+    },
+    {
+        "name": "Buddy", 
+        "gender": "m"
+    },
+    {
+        "name": "Sadie", 
+        "gender": "f"
+    },
+    {
+        "name": "Rocky", 
+        "gender": "m"
+    },
+    {
+        "name": "Molly", 
+        "gender": "f"
+    },
+    {
+        "name": "Tucker", 
+        "gender": "m"
+    },
+    {
+        "name": "Zoe", 
+        "gender": "f"
+    },
+    {
+        "name": "Bear", 
+        "gender": "m"
+    },
+    {
+        "name": "Stella", 
+        "gender": "f"
+    },
+    {
+        "name": "Duke", 
+        "gender": "m"
+    },
+    {
+        "name": "Riley", 
+        "gender": "n"
+    },
+    {
+        "name": "Nala", 
+        "gender": "f"
+    },
+    {
+        "name": "Oliver", 
+        "gender": "m"
+    },
+    {
+        "name": "Lola", 
+        "gender": "f"
+    },
+    {
+        "name": "Jake", 
+        "gender": "m"
+    },
+    {
+        "name": "Chloe", 
+        "gender": "f"
+    },
+    {
+        "name": "Buster", 
+        "gender": "m"
+    },
+    {
+        "name": "Maggie", 
+        "gender": "f"
+    },
+    {
+        "name": "Zeus", 
+        "gender": "m"
+    },
+    {
+        "name": "Roxy", 
+        "gender": "f"
+    },
+    {
+        "name": "Bentley", 
+        "gender": "m"
+    },
+    {
+        "name": "Rosie", 
+        "gender": "f"
+    },
+    {
+        "name": "Finn", 
+        "gender": "m"
+    },
+    {
+        "name": "Ruby", 
+        "gender": "f"
+    },
+    {
+        "name": "Jackson", 
+        "gender": "m"
+    },
+    {
+        "name": "Gracie", 
+        "gender": "f"
+    },
+    {
+        "name": "Teddy", 
+        "gender": "m"
+    },
+    {
+        "name": "Coco", 
+        "gender": "n"
+    },
+    {
+        "name": "Oscar", 
+        "gender": "m"
+    },
+    {
+        "name": "Penny", 
+        "gender": "f"
+    },
+    {
+        "name": "Winston", 
+        "gender": "m"
+    },
+    {
+        "name": "Lilly", 
+        "gender": "f"
+    },
+    {
+        "name": "Sam", 
+        "gender": "n"
+    },
+    {
+        "name": "Marley", 
+        "gender": "n"
+    },
+    {
+        "name": "Harley", 
+        "gender": "n"
+    },
+    {
+        "name": "Willow", 
+        "gender": "f"
+    },
+    {
+        "name": "Gus", 
+        "gender": "m"
+    },
+    {
+        "name": "Abby", 
+        "gender": "f"
+    },
+    {
+        "name": "Leo", 
+        "gender": "m"
+    },
+    {
+        "name": "Ellie", 
+        "gender": "f"
+    },
+    {
+        "name": "Rex", 
+        "gender": "m"
+    },
+    {
+        "name": "Pepper", 
+        "gender": "n"
+    },
+    {
+        "name": "Henry", 
+        "gender": "m"
+    },
+    {
+        "name": "Hazel", 
+        "gender": "f"
+    },
+    {
+        "name": "Toby", 
+        "gender": "m"
+    },
+    {
+        "name": "Sophie", 
+        "gender": "f"
+    },
+    {
+        "name": "Ginger", 
+        "gender": "f"
+    },
+    {
+        "name": "Louie", 
+        "gender": "m"
+    },
+    {
+        "name": "Mia", 
+        "gender": "f"
+    },
+    {
+        "name": "Boomer", 
+        "gender": "m"
+    },
+    {
+        "name": "Millie", 
+        "gender": "f"
+    },
+    {
+        "name": "Murphy", 
+        "gender": "m"
+    },
+    {
+        "name": "Zoey", 
+        "gender": "f"
+    },
+    {
+        "name": "Tank", 
+        "gender": "m"
+    },
+    {
+        "name": "Layla", 
+        "gender": "f"
+    },
+    {
+        "name": "Koda", 
+        "gender": "n"
+    },
+    {
+        "name": "Bruno", 
+        "gender": "m"
+    },
+    {
+        "name": "Cali", 
+        "gender": "f"
+    },
+    {
+        "name": "Otis", 
+        "gender": "m"
+    },
+    {
+        "name": "Harper", 
+        "gender": "f"
+    },
+    {
+        "name": "Ace", 
+        "gender": "m"
+    },
+    {
+        "name": "Annie", 
+        "gender": "f"
+    },
+    {
+        "name": "Remy", 
+        "gender": "n"
+    },
+    {
+        "name": "Chester", 
+        "gender": "m"
+    },
+    {
+        "name": "Belle", 
+        "gender": "f"
+    },
+    {
+        "name": "Scout", 
+        "gender": "n"
+    },
+    {
+        "name": "Sammy", 
+        "gender": "n"
+    },
+    {
+        "name": "Dakota", 
+        "gender": "n"
+    },
+    {
+        "name": "Ranger", 
+        "gender": "m"
+    },
+    {
+        "name": "Raven", 
+        "gender": "f"
+    },
+    {
+        "name": "Moose", 
+        "gender": "m"
+    },
+    {
+        "name": "Athena", 
+        "gender": "f"
+    },
+    {
+        "name": "Bruno", 
+        "gender": "m"
+    },
+    {
+        "name": "Jasper", 
+        "gender": "m"
+    },
+    {
+        "name": "Holly", 
+        "gender": "f"
+    },
+    {
+        "name": "Rusty", 
+        "gender": "m"
+    },
+    {
+        "name": "Paisley", 
+        "gender": "f"
+    },
+    {
+        "name": "Hank", 
+        "gender": "m"
+    },
+    {
+        "name": "Sasha", 
+        "gender": "f"
+    },
+    {
+        "name": "Blue", 
+        "gender": "n"
+    },
+    {
+        "name": "Diesel", 
+        "gender": "m"
+    },
+    {
+        "name": "Lulu", 
+        "gender": "f"
+    },
+    {
+        "name": "Brody", 
+        "gender": "m"
+    },
+    {
+        "name": "Freya", 
+        "gender": "f"
+    },
+    {
+        "name": "Rudy", 
+        "gender": "m"
+    },
+    {
+        "name": "Aspen", 
+        "gender": "n"
+    },
+    {
+        "name": "Simba", 
+        "gender": "m"
+    },
+    {
+        "name": "Marley", 
+        "gender": "n"
+    },
+    {
+        "name": "Misty", 
+        "gender": "f"
+    },
+    {
+        "name": "Apollo", 
+        "gender": "m"
+    }
+]

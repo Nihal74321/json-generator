@@ -1,0 +1,82 @@
+[
+    {
+    "breed_id": 1,
+    "breed_name": "Labrador Retriever"
+    },
+    {
+    "breed_id": 2,
+    "breed_name": "German Shepherd"
+    },
+    {
+    "breed_id": 3,
+    "breed_name": "Golden Retriever"
+    },
+    {
+    "breed_id": 4,
+    "breed_name": "Bulldog"
+    },
+    {
+    "breed_id": 5,
+    "breed_name": "Poodle"
+    },
+    {
+    "breed_id": 6,
+    "breed_name": "Beagle"
+    },
+    {
+    "breed_id": 7,
+    "breed_name": "Rottweiler"
+    },
+    {
+    "breed_id": 8,
+    "breed_name": "Yorkshire Terrier"
+    },
+    {
+    "breed_id": 9,
+    "breed_name": "Boxer"
+    },
+    {
+    "breed_id": 10,
+    "breed_name": "Dachshund"
+    },
+    {
+    "breed_id": 11,
+    "breed_name": "Siberian Husky"
+    },
+    {
+    "breed_id": 12,
+    "breed_name": "Great Dane"
+    },
+    {
+    "breed_id": 13,
+    "breed_name": "Doberman Pinscher"
+    },
+    {
+    "breed_id": 14,
+    "breed_name": "Shih Tzu"
+    },
+    {
+    "breed_id": 15,
+    "breed_name": "Australian Shepherd"
+    },
+    {
+    "breed_id": 16,
+    "breed_name": "Pug"
+    },
+    {
+    "breed_id": 17,
+    "breed_name": "Cocker Spaniel"
+    },
+    {
+    "breed_id": 18,
+    "breed_name": "French Bulldog"
+    },
+    {
+    "breed_id": 19,
+    "breed_name": "Chihuahua"
+    },
+    {
+    "breed_id": 20,
+    "breed_name": "Border Collie"
+    }
+]  
