@@ -1,9 +1,12 @@
+//Misc functions to assist with better data generation
 function GetLogX(x, n) {
     return Math.floor(Math.log(n) / Math.log(x))
 }
 function GetRand(container) {
     return Math.floor(Math.random() * container.length) 
 }
+
+//getobjects calls json files from dir
 async function GetObjects(){
     const [dogs, humans, walk_notes, breeds, date_time] = await Promise.all([
         fetch("./dogs.json"),
@@ -13,13 +16,14 @@ async function GetObjects(){
         fetch("./dates-times.json"),
     ])
 
+    //no error handling. will be added
     const dog_response = await dogs.json()
     const humans_response = await humans.json()
     const w_n_response = await walk_notes.json()
     const breed_response = await breeds.json()
     const d_t_response = await date_time.json()
 
-    return [dog_response, humans_response, w_n_response, breed_response, d_t_response]
+    return [dog_response, humans_response, w_n_response, breed_response, d_t_response] // [d,h,w,b,d_t] in method calls for this file
 }
 
 async function PairDogs() {
@@ -41,6 +45,7 @@ async function PairDogs() {
     })
 }
 
+//count is currently log3(seed_count) but can be changed in generateJsonArray method
 async function PairedDogArray(count) {
     let arr = []
     for(let i =  0; i < count; i++) {
@@ -63,6 +68,7 @@ async function PairWalker() {
     })
 }
 
+//count is log2(seed_count) can be changed in generateJsonArray method
 async function PairedWalkerArray(count) {
     let arr = []
     for(let i =  0; i < count; i++) {
@@ -108,8 +114,8 @@ async function ParseEnt(dog_arr, walker_arr) {
 }
 async function GenerateJsonArray(seed_count) {
     let arr = []
-    let dog_arr = await PairedDogArray(GetLogX(3, seed_count))
-    let walker_arr = await PairedWalkerArray(GetLogX(2, seed_count))
+    let dog_arr = await PairedDogArray(GetLogX(3, seed_count)) //change length of dog array
+    let walker_arr = await PairedWalkerArray(GetLogX(2, seed_count)) //change length of walker array
 
     for(let i = 0; i < seed_count; i++) {
         const ent = await ParseEnt(dog_arr, walker_arr)
@@ -118,8 +124,8 @@ async function GenerateJsonArray(seed_count) {
     const data_str = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(arr, null, 2))
     const a = document.createElement('a')
     a.setAttribute("href", data_str)
-    a.setAttribute("download", "test-system.json")
-    a.click()
+    a.setAttribute("download", "test-system.json") //second param is file-name
+    a.click() //auto download on method call
 }
 
-GenerateJsonArray(30)
+GenerateJsonArray(30) //param => # of documents in array
