@@ -35,7 +35,7 @@ async function PairDogs() {
         dog_entity.name = d[seed_d].name
         dog_entity.gender = d[seed_d].gender
         dog_entity.breed = b[seed_b].breed_name
-        dog_entity.owner = {first_name: h[seed_h].first_name, last_name: h[seed_h].last_name, gender: h[seed_h].gender, email: h[seed_h].email, mb_number: h[seed_h].mobile_number, payment_method: h[seed_h].payment_method}
+        dog_entity.owner = {user_id: crypto.randomUUID(), first_name: h[seed_h].first_name, last_name: h[seed_h].last_name, gender: h[seed_h].gender, email: h[seed_h].email, mb_number: h[seed_h].mobile_number, payment_method: h[seed_h].payment_method}
 
         return dog_entity
     })
@@ -62,7 +62,7 @@ async function ParseEnt(dog_arr) {
         let seed_dog = GetRand(dog_arr)
 
         booked_walk.transaction_id = crypto.randomUUID()
-        booked_walk.walker = {first_name: h[seed_w].first_name, last_name: h[seed_w].last_name}
+        booked_walk.walker = {id: crypto.randomUUID(),first_name: h[seed_w].first_name, last_name: h[seed_w].last_name, mobile_number: h[seed_w].mobile_number}
         booked_walk.notes = w[seed_w_n].note
         booked_walk.date = d_t[seed_d].date
         booked_walk.time = d_t[seed_d].time
@@ -72,6 +72,7 @@ async function ParseEnt(dog_arr) {
             gender: dog_arr[seed_dog].gender,
             breed: dog_arr[seed_dog].breed,
             owner: {
+                user_id: dog_arr[seed_dog].owner.user_id,
                 first_name: dog_arr[seed_dog].owner.first_name,
                 last_name: dog_arr[seed_dog].owner.last_name,
                 gender: dog_arr[seed_dog].owner.gender,
