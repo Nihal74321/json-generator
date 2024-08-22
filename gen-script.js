@@ -1,5 +1,5 @@
-function GetLog3(n) {
-    return Math.floor(Math.log(n) / Math.log(3))
+function GetLogX(x, n) {
+    return Math.floor(Math.log(n) / Math.log(x))
 }
 function GetRand(container) {
     return Math.floor(Math.random() * container.length) 
@@ -50,19 +50,41 @@ async function PairedDogArray(count) {
     return arr
 }
 
-async function ParseEnt(dog_arr) {
+async function PairWalker() {
+    let walker = {}
+    return GetObjects().then(([d,h,w,b,d_t]) => {
+        let seed_name = GetRand(h)
+        walker.user_id = crypto.randomUUID()
+        walker.first_name = h[seed_name].first_name
+        walker.last_name = h[seed_name].last_name
+        walker.mobile_number = h[seed_name].mobile_number
+        
+        return walker
+    })
+}
+
+async function PairedWalkerArray(count) {
+    let arr = []
+    for(let i =  0; i < count; i++) {
+        const ent = await PairWalker()
+        arr.push(ent)
+    }
+    return arr
+}
+
+async function ParseEnt(dog_arr, walker_arr) {
     let booked_walk = {
         walker: {},
         dog: {}
     }
     return GetObjects().then(([d,h,w,b,d_t]) => {
-        let seed_w = GetRand(h)
-        let seed_w_n = GetRand(w)
         let seed_d = GetRand(d_t)
         let seed_dog = GetRand(dog_arr)
+        let seed_w = GetRand(walker_arr)
+        let seed_w_n = GetRand(w)
 
         booked_walk.transaction_id = crypto.randomUUID()
-        booked_walk.walker = {id: crypto.randomUUID(),first_name: h[seed_w].first_name, last_name: h[seed_w].last_name, mobile_number: h[seed_w].mobile_number}
+        booked_walk.walker = {id: walker_arr[seed_w].user_id,first_name: walker_arr[seed_w].first_name, last_name: walker_arr[seed_w].last_name, mobile_number: walker_arr[seed_w].mobile_number}
         booked_walk.notes = w[seed_w_n].note
         booked_walk.date = d_t[seed_d].date
         booked_walk.time = d_t[seed_d].time
@@ -86,10 +108,11 @@ async function ParseEnt(dog_arr) {
 }
 async function GenerateJsonArray(seed_count) {
     let arr = []
-    let dog_arr = await PairedDogArray(GetLog3(seed_count))
+    let dog_arr = await PairedDogArray(GetLogX(3, seed_count))
+    let walker_arr = await PairedWalkerArray(GetLogX(2, seed_count))
 
     for(let i = 0; i < seed_count; i++) {
-        const ent = await ParseEnt(dog_arr)
+        const ent = await ParseEnt(dog_arr, walker_arr)
         arr.push(ent)
     }
     const data_str = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(arr, null, 2))
